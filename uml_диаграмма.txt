@@ -1,0 +1,57 @@
++---------------------------------+       +----------------------------------+
+|              Agency             |       |               Train              |
++---------------------------------+       +----------------------------------+
+| - from_station: std::string     |       | - num_van: unsigned short int    |
+| - to_station: std::string       |       +----------------------------------+
++---------------------------------+       | + Train(from_station:            |
+|                                 |       |      std::string                 |
+| + Agency(from_station:          |       |       to_station: std::string,   |
+|    std::string,                 |       |                                  |
+|  to_station: std::string):      |       |    num_van: unsigned short int)  |
+| + getFrom(): std::string        |       +----------------------------------+
+| + getTo(): std::string          |       | + getFrom(): std::string         |
+| + print(): void                 |       | + getTo(): std::string           |
++---------------------------------+       | + printnum(): void               |
+                                          +----------------------------------+
+                                                   |
+                                                   |
+                                                   |
+                                     +-------------v-------------------+
+                                     |             Van                 |
+                                     +---------------------------------+
+                                     | - num_seat: unsigned short int  |
+                                     +---------------------------------+
+                                     | + Van(from_station: std::string,|
+                                     |     to_station: std::string,    |
+                                     |     num_van: unsigned short int,|
+                                     |    num_seat: unsigned short int)|
+                                     +---------------------------------+
+                                     | + getFrom(): std::string        |
+                                     | + getTo(): std::string          |
+                                     | + printnum(): void              |
+                                     +---------------------------------+
+                                                     |
+                                                     |
+                                                     |
+                                     +---------------v----------------+
+                                     |         Passenger              |
+                                     +--------------------------------+
+                                     | - name: std::string            |
+                                     +--------------------------------+
+                                     | + Passenger(name: std::string) |
+                                     +--------------------------------+
+                                     | + getName(): std::string       |
+                                     +--------------------------------+
+                                                   |
+                                                   |
+                                                   |
+                                     +-------------v-----------------------+
+                                     |          Ticket                     |
+                                     +-------------------------------------+
+                                     | - seat_number: unsigned short int   |
+                                     +-------------------------------------+
+                                     | + Ticket(name: std::string,         |
+                                     |   seat_number: unsigned short int)  |
+                                     +-------------------------------------+
+                                     | + getSeatNumber():unsigned short int|
+                                     +-------------------------------------+
